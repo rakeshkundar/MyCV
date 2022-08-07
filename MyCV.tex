@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Rakesh N Kundar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Rakesh N Kundar} \\ \vspace{5pt}
+    \textbf{\Large Software Development Engineer} \\ \vspace{3pt}
+    \small \faPhone* \texttt{+91-9741270626} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt}
+    \href{mailto:rakeshkundar1999@gmail.com}{\texttt {rakeshkundar1999@gmail.com}} $|$
+    \hspace{1pt} \faGithub \hspace{2pt} \href{https://https://github.com/rakeshkundar}{\texttt {rakeshkundar}} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\href{https://goo.gl/maps/CDMdX2MjZAS26pnk9}{\texttt {Manipal, KA, India}}
+    \\ \vspace{-3pt}
+\end{center}
+
+
+%-----------EXPERIENCE----------
+\section{ABOUT ME}
+{\texttt Software Development Engineer having professional experience of over 1.6+ years in analysis, design, development and implementation of complex business applications. Disciplined, tenacious, self-motivated, and creative IT engineer with strong programming skills, and a deep interest in new IT
+developments. Interested in finding solutions for intractable
+problems. Have a keen interest in acquiring practical exposure which helps me to contribute to the success of my work. Always focus on
+giving my best on each task I take up and aim to provide an elegant and efficient solution. Enjoys new experiences and challenges. 
+}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+      {Quantiphi}{February 2021 -- Present}
+      {\textbf{Software Development Engineer}}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Understood key points of insurance domain and coped up quickly with a fast paced environment to be actively involved in development.}
+        \resumeItem{Developed \textbf{sheet logic} feature solely from scratch which is one of the core functionality of the business requirement.}
+        \resumeItem{Worked on code configuration which simplified the code management and deployment across different environments.}
+        \resumeItem{Implemented logger framework using \textbf{Observer design pattern} and implemented reusable APIs for frontend and AWS Lambda functions to log several necessary details to AWS RDS.}
+        \resumeItem{Integrated Testing framework to the code base to efficiently write unit and integration test cases.}
+        \resumeItem{Actively participated in \textbf{PROD Support} in the very first \textbf{PROD} deployment.}
+        \resumeItem{Worked on replacing the traditional username/password authentication with \textbf{SAML based PING Authentication} on the UI.}
+        \resumeItem{Contributed in \textbf{MERGE} and \textbf{REALTIME} features to retain historical data and to move the data from batch to realtime process respectively.}
+        \resumeItem{Refactored the codebase to reduce the API response time and efficiently develop new features.}
+        \resumeItem{Improved the database performance by optimizing the queries and adding indexes to tables.}
+     \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Content Based Medical Image Retrieval Using Deep Learning} $|$ \emph{Python, Google Colab, Tensorflow, Keras, Numpy}}\\
+          \resumeItemListStart
+             \resumeItem{\textbf{Primary Goal :} To provide an efficient search mechanism on the image dataset based on input image. }
+             \resumeItem{\textbf{Solution :} Collected images of different parts of human body from various sources. Built a Keras model and trained with training and validation dataset. Tested the model output with test dataset. Improved model performance by adding variations in the training dataset and varying optimizers.}
+             \resumeItem{\textbf{Result :} This solution has shown 90\% accuracy on image classification and retrieval. This helps medical experts to understand the category of disease and its severity.}
+        \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Neural Network for Image and Video Compression} $|$ \emph{Python, Google Colab, Tensorflow, Keras, Numpy}}\\
+         \resumeItemListStart
+             \resumeItem{\textbf{Primary Goal :} To efficiently transmit the multimedia data over network using deep neural network.}
+             \resumeItem{\textbf{Solution :} Developed Downscaling and Upscaling Neural Networks using Keras framework which efficiently compress the original multimedia data frames at source end and decompress at the receiver end using multiple steps. This reduces the amount of data sent over the network minimizing the traffic.}
+             \resumeItem{\textbf{Result :} Data sent over the network is reduced by 50\% and the reconstructed data at the receiver end had similar PSNR value as that of tradition approach.} \newline
+         \resumeItemListEnd 
+          
+      \resumeProjectHeading 
+         {\textbf{Jenkins Pipeline for Deploying Django Microservice} $|$ \emph{Python, Django, Jenkins, Docker, Github, PostgreSql}} \\
+          \resumeItemListStart
+            \resumeItem{\textbf{Primary Goal :} To automate the deployment of Django Microservice to the virtual machine on cloud.}
+            \resumeItem{\textbf{Solution :} Learnt and built a pipeline using Jenkins by integrating Github, writing Jobs to perform testing on the Github code. Deploying the successfully validated code to the server via Jenkins pipeline.}
+            \resumeItem{\textbf{Result :} Solution had simplified the deployment process and completely removed the dependency on manual deployment. This resulted into quicker deployments and are error resistant. }
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+    
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}
+    \item \textbf{Programming Languages} {: Python, C/C++, Java, JavaScript}\vspace{2pt} \\
+    \item \textbf{Frameworks} {: Django, Pandas, Jupyter}\vspace{2pt} \\
+    \item \textbf{Databases} {: MSSQL, MySQL, PostgreSQL, MongoDB, Amazon RDS}\vspace{2pt} \\
+    \item \textbf{DevOps} {: Git, GitHub, Docker, Jenkins, AWS CloudFormation, AWS Codecommit}\vspace{2pt} \\
+    \item \textbf{Cloud}     {: AWS, GCP}\vspace{2pt} \\
+    \item \textbf{Operating System} {: Microsoft Windows, Linux( CentOS, Ubuntu)}\vspace{2pt} \\
+    \item \textbf{Tools and IDEs} {: Visual Studio Code, S3, Lambda, Sagemaker, CloudWatch, Eclipse, Postman, DB Visualizer}\vspace{2pt} \\
+ \end{itemize}
+ 
+
+%-----------EDUCATION-----------
+
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal Institute of Technology, Manipal}{Aug. 2017 -- May 2021}
+      {Bachelor of Technology in Computer Science and Engineering. 8.84 CGPA}{Manipal, Karnataka, India}
+  \resumeSubHeadingListEnd
+
+\section {LANGUAGES}
+  \resumeItemListStart
+    \resumeItem{\textbf{English } - Full Professional Proficiency}
+    \resumeItem{\textbf{Kannada } - Full Professional Proficiency}
+    \resumeItem{\textbf{Hindi } - Full Professional Proficiency}
+    \resumeItem{\textbf{Tulu } - Full Professional Proficiency}
+  \resumeItemListEnd
+
+ %-----------Certifications-----------
+\section{CERTIFICATIONS}
+ \begin{itemize}
+    \item \textbf{AWS : AWS Certified Solution Architect Associate} {(05/2021 - 06/2024)}\vspace{2pt} \\
+    \item \textbf{Udemy : Jenkins, From Zero To Hero: Become a DevOps Jenkins} \\
+    \item \textbf{Udemy : Google Certified Associate Cloud Engineer
+Certification } \\
+ \end{itemize}
+ 
+ %-----------Achievements-----------
+\section{ACHIEVEMENTS}
+ \begin{itemize}
+    \item \textbf{Awards} {Kingsman and Innovator for remarkble contribution to the organization.} \vspace{2pt} \\
+    \item \textbf{Other Recognition -} {Received appreciation from the Leadership and project Manager for fixing the database  issue in production environment in quick succession.} \vspace{2pt} \\
+    \item \textbf{Trainer and Assessor -} {Trained and assessed multiple freshers onboarding to the project and guided them to the right path with constant support.} \vspace{2pt} \\
+    \item \textbf{Interests -} {Event Management, Cricket, Travelling.} \vspace{2pt} \\
+ \end{itemize}
+%-------------------------------------------
+\end{document}
